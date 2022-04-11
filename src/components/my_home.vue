@@ -1,7 +1,8 @@
 <template>
-    <div>
-        Home
-    </div>
+    <section id="info_home">
+        <div class="noite"></div>
+        <div class="constelacao"></div>
+    </section>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../styles/main.css";
 
 </style>

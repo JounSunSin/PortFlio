@@ -7,7 +7,7 @@ module.exports = defineConfig({
                 additionalData: `
                     @import "@/styles/_standard.scss";
                 `
-            }
+            }            
         }
     }
 })

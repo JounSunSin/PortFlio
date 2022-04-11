@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <section id="info_skill">
         Skill
-    </div>
+    </section>
 </template>
 
 <script>
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import "../styles/main.css";
 </style>
