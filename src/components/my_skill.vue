@@ -1,6 +1,6 @@
 <template>
     <section id="info_skill">
-        Skill
+        <div class="img_padding"></div>
     </section>
 </template>
 

@@ -1,7 +1,17 @@
 <template>
     <section id="info_home">
-        <div class="noite"></div>
-        <div class="constelacao"></div>
+        <div class="img_padding">
+            <div id="fly-in">  
+                <div><span>Very</span>Cinematic</div>
+                <div>Fade Away<span>into the distance</span></div>
+                <div>Still Loops <span> for eternity</span></div>
+                <div><span>Just CSS</span> and HTML</div>
+                <div><span>Very</span>Cinematic</div>
+                <div>Fade Away<span>into the distance</span></div>
+                <div>Still Loops <span> for eternity</span></div>
+                <div><span>Just CSS</span> and HTML</div>
+            </div>    
+        </div>
     </section>
 </template>
 

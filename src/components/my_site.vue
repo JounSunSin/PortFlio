@@ -1,6 +1,6 @@
 <template>
     <section id="info_site">
-        Web Site
+        <div class="img_padding"></div>
     </section>
 </template>
 

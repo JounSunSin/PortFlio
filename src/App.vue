@@ -10,6 +10,7 @@ import Home from './components/my_home.vue';
 import Skill from './components/my_skill.vue';
 import WebSite from './components/my_site.vue';
 import Phone from './components/my_phone.vue';
+import './';
 
 export default {
     name: 'App',

@@ -1,6 +1,6 @@
 <template>
     <section id="info_phone">
-        Email
+        <div class="img_padding"></div>
     </section>
 </template>
 
