@@ -1,9 +1,10 @@
-
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './routers/index.js';
+import { createApp } from 'vue';
+import Vuex from 'vuex';
+import App from './App.vue';
+import Router from './routers/index.js';
 
 const app = createApp(App);
 
-app.use(router);
+app.use(Vuex);
+app.use(Router);
 app.mount('#app');
