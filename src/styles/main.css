@@ -9,7 +9,7 @@ html, body {
 } 
 
 #info_home { background-image: url("../assets/section1.jpg") }
-#info_skill { background-image: url("../assets/section2.jpg") }
+#info_skill { background-image: url("../assets/section2.png") }
 #info_site { background-image: url("../assets/section3.jpg") }
 #info_phone { background-image: url("../assets/section4.jpg") }
 
@@ -98,7 +98,6 @@ html, body {
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
 }
-
 /* 메뉴바 css */
 .nav-main {
     align-items: center;
@@ -116,9 +115,6 @@ html, body {
     height: 50%;
     left: 0;
     position: absolute;
-    transform: translateX(-110%);
-    transform-origin: 0 50%;
-    transition: transform calc(150ms * 2) 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
     width: 100%;
     z-index: -100;
 }
@@ -282,4 +278,32 @@ html, body {
     50%, 100% {
         opacity: 0;
     }
+}
+/* section 2 */
+#skillBox {
+    width: 99vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#skillBox :nth-child(1) { background-image: url("../assets/java.png"); }
+#skillBox :nth-child(2) { background-image: url("../assets/php.png"); }
+#skillBox :nth-child(3) { background-image: url("../assets/vue.png"); }
+#skillBox :nth-child(4) { background-image: url("../assets/html5.png"); }
+#skillBox :nth-child(6) { background-image: url("../assets/css3.png"); }
+#skillBox :nth-child(7) { background-image: url("../assets/mysql.png"); }
+#skillBox :nth-child(8) { background-image: url("../assets/javascript.png"); }
+#skillBox :nth-child(9) { background-image: url("../assets/jquery.png"); }
+
+.skill_item {
+    flex: 1 1 30%;
+    max-width: 800px;
+    width: 25%;
+    height: 30%;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;    
 }

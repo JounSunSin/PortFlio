@@ -15,11 +15,3 @@
         </div>
     </section>
 </template>
-
-<script>
-</script>
-
-<style lang="scss">
-@import "../styles/main.css";
-
-</style>

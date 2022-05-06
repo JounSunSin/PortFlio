@@ -13,11 +13,14 @@ import Skill from './components/my_skill.vue';
 import WebSite from './components/my_site.vue';
 import Phone from './components/my_phone.vue';
 
-
 export default {
     name: 'App',
     components: {
         Home, Skill, WebSite, Phone, Nav
+    },
+    mounted () {
+    },
+    methods: {
     }
 }
 </script>
