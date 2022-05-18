@@ -1,9 +1,11 @@
 <template>
-    <Nav/>
-    <Home/>
-    <Skill/>
-    <WebSite/>
-    <Phone/>
+    <section id="routers">
+        <Nav/>
+        <Home/>
+        <Skill/>
+        <WebSite/>
+        <Phone/>
+    </section>
 </template>
 
 <script>
@@ -24,3 +26,7 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+@import "./styles/main.css";
+</style>

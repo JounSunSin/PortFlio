@@ -21,10 +21,10 @@
                 </li>
             </ul>
         </nav>
-    </section>
+    </section> 
 </template>
 
-<script>
+<script> 
 
 export default {
     data () {
@@ -36,12 +36,14 @@ export default {
         window.addEventListener('scroll', () => {
             this.scroll_num = window.scrollY;
             
-            if (this.scroll_num >= 300) {
+            if (this.scroll_num >= 800) {
                 this.$stateAni("stop");
             } else {
                 this.$stateAni("run");
             }
-        });
+        }); 
+
+        this.$backCover();
     },
 }
 </script>
