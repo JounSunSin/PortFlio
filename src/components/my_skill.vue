@@ -1,24 +1,32 @@
 <template>
     <section id="info_skill" class="section">
-        <div class="img_padding"></div>
-        <div id="skillBox">
-            <div class="skill_item" data-aos="fade-down-right"></div>
-            <div class="skill_item" data-aos="fade-down"></div>
-            <div class="skill_item" data-aos="fade-down-left"></div>
-            <div class="skill_item" data-aos="flip-up"></div>
-            <div class="skill_item" data-aos="flip-up"></div>
-            <div class="skill_item" data-aos="flip-up"></div>
-            <div class="skill_item" data-aos="fade-up-right" data-aos-anchor-placement="top"></div>
-            <div class="skill_item" data-aos="fade-up" data-aos-anchor-placement="top"></div>
-            <div class="skill_item" data-aos="fade-up-left" data-aos-anchor-placement="top"></div>
+        <div id="section2_layout">
+            <div class="contactBox">
+                <p class="title_s">
+                    <a class="contact_a">SKILL</a>
+                </p>
+            </div>
+
+            <div id="skillBox">
+                <div class="skill_item s_java"></div>
+                <div class="skill_item s_php"></div>
+                <div class="skill_item s_vue"></div>
+                <div class="skill_item s_html"></div>
+                <div class="skill_item s_premiere"></div>
+                <div class="skill_item s_css"></div>
+                <div class="skill_item s_mysql"></div>
+                <div class="skill_item s_script"></div>
+                <div class="skill_item s_jquery"></div>
+            </div>
         </div>
     </section>
 </template>
 
 <script>
+
 export default {
-    mounted () {
-        this.$startAos();
+    mounted() {
+        this.$showSkill();
     },    
 }
 </script>

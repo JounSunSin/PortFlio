@@ -1,7 +1,6 @@
 import * as jq from 'jquery';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import AOS from 'aos';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,13 +10,33 @@ const methods = {
     console_log(value) {
         console.log(value)
     },
-    startAos() {
-        AOS.init({
-            duration: 1500,
-            delay: 1000,
-            easing: 'ease-in-sine',
-            offset: 500,
-        });
+    showSkill() {    
+        gsap.to('.skill_item', {
+            duration: 3,
+            scrollTrigger: {
+                trigger: ".skill_item",
+                toggleActions: "restart none reverse none",
+                start: 'top 80%',
+                end: '+100px 10%',
+                onEnter: function() {
+                    methods.gsapSkill();
+                },
+                onLeaveBack: function() { 
+                    jq('.selfBox').css("skill_item",0);
+                }
+            },
+        })
+    },
+    gsapSkill() {
+        gsap.fromTo('.s_java', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5 });
+        gsap.fromTo('.s_php', { y: -400, opacity: 0 }, {opacity: 1, y: 0, duration: 5 });
+        gsap.fromTo('.s_vue', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5 });
+        gsap.fromTo('.s_html', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2 });
+        gsap.fromTo('.s_premiere', { opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2  });
+        gsap.fromTo('.s_css', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2  });
+        gsap.fromTo('.s_mysql', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 4 });
+        gsap.fromTo('.s_script', { y: 400, opacity: 0 }, {opacity: 1, y: 0, duration: 5, delay: 4 });
+        gsap.fromTo('.s_jquery', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 4 });
     },
     stateAni (state) {
         let sectionHome = jq("#info_home");
@@ -344,12 +363,12 @@ const methods = {
             },
         })
     },
-    
+
     gsapAni() {
         gsap.timeline()
-            .to(".self_address", { duration: 3, ease: "sine.out", opacity: 1, delay: 1 })
-            .to(".self_email", { duration: 3, ease: "sine.out", opacity: 1 })
-            .to(".self_phone", { duration: 3, ease: "sine.out", opacity: 1 })
+            .fromTo(".self_address",{ y: -500, opacity: 0 },{ y: 0, duration: 3, ease: "sine.out", opacity: 1, delay: 1 })
+            .fromTo(".self_email",{ opacity: 0 },{ duration: 3, ease: "sine.out", opacity: 1 })
+            .fromTo(".self_phone",{ y: 500, opacity: 0 },{ y: 0, duration: 2, ease: "sine.out", opacity: 1 })
     },
 }
 
@@ -362,8 +381,9 @@ export default {
         Vue.config.globalProperties.$stateAni = methods.stateAni;
         Vue.config.globalProperties.$backCover = methods.backCover;
         Vue.config.globalProperties.$typingMsg = methods.typingMsg;
-        Vue.config.globalProperties.$startAos = methods.startAos;
+        Vue.config.globalProperties.$showSkill = methods.showSkill;
         Vue.config.globalProperties.$gsapAni = methods.gsapAni;
+        Vue.config.globalProperties.$gsapSkill = methods.gsapSkill;
     }
 }
 

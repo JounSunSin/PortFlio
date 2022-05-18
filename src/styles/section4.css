@@ -54,7 +54,6 @@
     height: 30%;
     display: flex;
     flex-direction: row;
-    opacity: 0;
 }
 
 .self_img_map { background-image: url("../assets/marker.png"); }
@@ -126,7 +125,6 @@
     font-size:3em;
     margin:20px 0 20px 0; 
 }
-
 .contact_a{
     text-decoration:none; 
     -webkit-transition: all 0.5s;
@@ -204,8 +202,7 @@
 
 /*REEEEEEEEEEESPONSIVE*/
 @media (max-width: 650px) {
-    .title_p{
+    .title_p, .title_s {
         font-size:2em;
     }
-
 }
