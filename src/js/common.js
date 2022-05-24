@@ -16,7 +16,7 @@ const methods = {
             scrollTrigger: {
                 trigger: ".skill_item",
                 toggleActions: "restart none reverse none",
-                start: 'top 80%',
+                start: 'top 100%',
                 end: '+100px 10%',
                 onEnter: function() {
                     methods.gsapSkill();
@@ -31,12 +31,12 @@ const methods = {
         gsap.fromTo('.s_java', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5 });
         gsap.fromTo('.s_php', { y: -400, opacity: 0 }, {opacity: 1, y: 0, duration: 5 });
         gsap.fromTo('.s_vue', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5 });
-        gsap.fromTo('.s_html', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2 });
-        gsap.fromTo('.s_premiere', { opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2  });
-        gsap.fromTo('.s_css', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2  });
-        gsap.fromTo('.s_mysql', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 4 });
-        gsap.fromTo('.s_script', { y: 400, opacity: 0 }, {opacity: 1, y: 0, duration: 5, delay: 4 });
-        gsap.fromTo('.s_jquery', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 4 });
+        gsap.fromTo('.s_html', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 1 });
+        gsap.fromTo('.s_premiere', { opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 1  });
+        gsap.fromTo('.s_css', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 1  });
+        gsap.fromTo('.s_mysql', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2 });
+        gsap.fromTo('.s_script', { y: 200, opacity: 0 }, {opacity: 1, y: 0, duration: 5, delay: 2 });
+        gsap.fromTo('.s_jquery', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2 });
     },
     stateAni (state) {
         let sectionHome = jq("#info_home");
@@ -365,10 +365,9 @@ const methods = {
     },
 
     gsapAni() {
-        gsap.timeline()
-            .fromTo(".self_address",{ y: -500, opacity: 0 },{ y: 0, duration: 3, ease: "sine.out", opacity: 1, delay: 1 })
-            .fromTo(".self_email",{ opacity: 0 },{ duration: 3, ease: "sine.out", opacity: 1 })
-            .fromTo(".self_phone",{ y: 500, opacity: 0 },{ y: 0, duration: 2, ease: "sine.out", opacity: 1 })
+        gsap.fromTo(".self_address",{ y: -500, opacity: 0 },{ y: 0, duration: 3, ease: "sine.out", opacity: 1 })
+        gsap.fromTo(".self_email",{ opacity: 0 },{ duration: 3, ease: "sine.out", opacity: 1, delay: 2 })
+        gsap.fromTo(".self_phone",{ y: 200, opacity: 0 },{ y: 0, duration: 2, ease: "sine.out", opacity: 1, delay: 3 })
     },
 }
 

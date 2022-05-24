@@ -8,15 +8,15 @@
             </div>
 
             <div id="skillBox">
-                <div class="skill_item s_java"></div>
-                <div class="skill_item s_php"></div>
-                <div class="skill_item s_vue"></div>
-                <div class="skill_item s_html"></div>
-                <div class="skill_item s_premiere"></div>
-                <div class="skill_item s_css"></div>
-                <div class="skill_item s_mysql"></div>
-                <div class="skill_item s_script"></div>
-                <div class="skill_item s_jquery"></div>
+                <div class="skill_item s_java" alt="java logo"></div>
+                <div class="skill_item s_php" alt="php logo"></div>
+                <div class="skill_item s_vue" alt="vue logo"></div>
+                <div class="skill_item s_html" alt="html5 logo"></div>
+                <div class="skill_item s_premiere" alt="premiere pro logo"></div>
+                <div class="skill_item s_css" alt="css3 logo"></div>
+                <div class="skill_item s_mysql" alt="mysql logo"></div>
+                <div class="skill_item s_script" alt="javaScript logo"></div>
+                <div class="skill_item s_jquery" alt="jquery logo"></div>
             </div>
         </div>
     </section>

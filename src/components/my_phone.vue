@@ -37,7 +37,7 @@
                 <div>
                     <a class="self_img_git" href="https://github.com/JounSunSin?tab=repositories"
                     target="_blank" alt="GitHub"></a>
-                    <div>&copy; 2022 All rights reserved JongSun Portfolio</div>
+                    <div>&copy; 2022 Web Front-end developer by jong sun Shin</div>
                 </div>
             </div>
         </div>
@@ -49,7 +49,6 @@
 export default {
     mounted () {
         this.$typingMsg();
-        this.$gsapAni();
     }
 }
 </script>
