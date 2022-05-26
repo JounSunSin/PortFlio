@@ -10,6 +10,7 @@ const methods = {
     console_log(value) {
         console.log(value)
     },
+    // 섹션 2 애니효과
     showSkill() {    
         gsap.to('.skill_item', {
             duration: 3,
@@ -27,6 +28,7 @@ const methods = {
             },
         })
     },
+    // 섹션 2 gsap action
     gsapSkill() {
         gsap.fromTo('.s_java', { x: -400, opacity: 0 }, {opacity: 1, x: 0, duration: 5 });
         gsap.fromTo('.s_php', { y: -400, opacity: 0 }, {opacity: 1, y: 0, duration: 5 });
@@ -39,25 +41,17 @@ const methods = {
         gsap.fromTo('.s_jquery', { x: 400, opacity: 0 }, {opacity: 1, x: 0, duration: 5, delay: 2 });
     },
     stateAni (state) {
-        let sectionHome = jq("#info_home");
-        let textAni = jq("#fly-in");
-        let downAni = jq("#scroll-down");
+        let textAni = jq(".sp-content");
         let navCheck = jq("#main-navigation-toggle").is(":checked");
 
         if (state === 'stop') {
             textAni.css('display','none');
-            downAni.css('display','none');
         } else if (state === 'run' && navCheck == false) {
             textAni.css('display','block');
-            downAni.css('display','block');
         } else if (state === 'checked' && navCheck == false) {
             textAni.css('display','none');
-            downAni.css('display','none');
-            sectionHome.css('display','contents');
         } else if (state === 'checked' && navCheck == true) {
             textAni.css('display','block');
-            downAni.css('display','block');
-            sectionHome.css('display','block');
         }
     },
     backCover () {
@@ -137,7 +131,7 @@ const methods = {
         let result1  = "마지막까지 읽어 주셔서 감사합니다";
         let result2  = "일은 언제나 고객의 눈높이에 맞추어";
         let result3  = "늘 소통하고 생각하며 일하겠습니다";
-        let result4  = "오늘도 평안하고 즐거운 하루 되세요";
+        let result4  = "오늘도 평안하고 즐거운 하루 보내세요";
         let result5  = "T h a n k 　 Y o u !";
     
         let typeing1 = [];
@@ -217,10 +211,10 @@ const methods = {
                     setTimeout(function(){             
                         resultDiv2.classList.add("cursor");
                         setTimeout(function(){
-                            inter2 = setInterval(typingText2,80);
-                        },100);
-                    },100);
-                },100);          
+                            inter2 = setInterval(typingText2,50);
+                        },50);
+                    },50);
+                },50);          
             }
         }
     
@@ -249,9 +243,9 @@ const methods = {
                 setTimeout(function(){    
                     resultDiv2.classList.remove("cursor");
                     setTimeout(function(){
-                        inter3 = setInterval(typingText3,80);
-                    },100);
-                },100);          
+                        inter3 = setInterval(typingText3,50);
+                    },50);
+                },50);          
             }
         }
     
@@ -279,9 +273,9 @@ const methods = {
                 setTimeout(function(){    
                     resultDiv3.classList.remove("cursor");
                     setTimeout(function(){
-                        inter4 = setInterval(typingText4,80);
-                    },100);
-                },100);            
+                        inter4 = setInterval(typingText4,50);
+                    },50);
+                },50);            
             }
         }
 
@@ -309,9 +303,9 @@ const methods = {
                 setTimeout(function(){    
                     resultDiv4.classList.remove("cursor");
                     setTimeout(function(){
-                        inter5 = setInterval(typingText5,80);
-                    },100);
-                },100);            
+                        inter5 = setInterval(typingText5,50);
+                    },50);
+                },50);            
             }
         }
     

@@ -27,6 +27,6 @@
 export default {
     mounted() {
         this.$showSkill();
-    },    
+    }
 }
 </script>

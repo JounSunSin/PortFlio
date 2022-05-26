@@ -18,16 +18,18 @@
                     <input class="card-slider" type="radio" name="slider" id="s7">
 
                     <label for="s1" id="slide1" class="card-slider">
-                        <div class="oneBox site_img1" alt="무한번역"></div>
-                        <div class="twoBox">
-                            <div class="pf_title">무한번역</div>
-                            <div class="pf_lang">PHP</div>
-                            <div class="pf_job">디자인 / 퍼블리싱 / 코딩 </div>
-                            <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
-                            <div class="pf_btn">
-                                <button class="btn">
-                                    <a target="_blank" href="http://www.mttrans.co.kr/korean/index.php" alt="무한번역 홈페이지">View Site</a>
-                                </button>
+                        <div class="site_flex">
+                            <div class="oneBox site_img1" alt="무한번역"></div>
+                            <div class="twoBox">
+                                <div class="pf_title">무한번역</div>
+                                <div class="pf_lang">PHP</div>
+                                <div class="pf_job">디자인 / 퍼블리싱 / 코딩 </div>
+                                <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
+                                <div class="pf_btn">
+                                    <button class="btn">
+                                        <a target="_blank" href="http://www.mttrans.co.kr/korean/index.php" alt="무한번역 홈페이지">View Site</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </label>
@@ -54,13 +56,13 @@
                             <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
                             <div class="pf_btn btn_multi">
                                 <button class="btn">
-                                    <a target="_blank" href="http://polisci.snu.ac.kr/korean/" alt="서울대 정치학 전공 홈페이지">정치학 전공</a>
+                                    <a target="_blank" href="http://polisci.snu.ac.kr/korean/" alt="서울대 정치학 전공 홈페이지">정치학전공</a>
                                 </button>
                                 <button class="btn">
-                                    <a target="_blank" href="http://ir.snu.ac.kr/korean/" alt="서울대 외교학 전공 홈페이지">외교학 전공</a>
+                                    <a target="_blank" href="http://ir.snu.ac.kr/korean/" alt="서울대 외교학 전공 홈페이지">외교학전공</a>
                                 </button>
                                 <button class="btn">
-                                    <a target="_blank" href="http://psir.snu.ac.kr/korean/" alt="서울대 정치외교 학부 홈페이지">정치외교 학부</a>
+                                    <a target="_blank" href="http://psir.snu.ac.kr/korean/" alt="서울대 정치외교 학부 홈페이지">정치외교학부</a>
                                 </button>
                             </div>
                         </div>
@@ -123,6 +125,8 @@
 <script>
 
 export default {
+    mounted() {
 
+    }
 }
 </script> 

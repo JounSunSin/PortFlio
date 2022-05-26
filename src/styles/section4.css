@@ -1,6 +1,6 @@
 /* section 4 */
 #section4_layout {
-    width: 99vw;
+    width: 100%;
     height: 100vh;
     position: fixed;
     display: flex;
@@ -9,19 +9,18 @@
 
 .center_layout {
     width: 575px;
-    height: 90vh;
+    height: 94vh;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
     display: flex;
     flex-direction: column;
-    flex-basis: center;
     text-shadow: yellow 1px 1px 1px;
 }
 .message {
-    width: 575px;
-    height: 45vh;
+    width: 100%;
+    height: 65%;
     display: flex;
     flex-direction: column;
 }
@@ -31,7 +30,8 @@
     font-size: 1.7rem;
     color: #fff;
     font-weight: 700;
-    height: 40%;
+    height: 75%;
+    margin-top: 10vh;
 }
 
 .phoneBox {
@@ -49,11 +49,14 @@
     font-weight: 700;
 }
 
+.contactBox { height: 11%; }
+
 .selfBox {
     width: 100%;
     height: 30%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .self_img_map { background-image: url("../assets/marker.png"); }
@@ -70,11 +73,11 @@
 }    
 
 .self_text {
-    margin-top: 4.5vh;
     margin-left: 65px;
 }
 
 #footerDiv {
+    width: 100%;
     height: 5vh;
     background-color: #50586C;
     position: static;
@@ -202,8 +205,50 @@
 }
 
 /*REEEEEEEEEEESPONSIVE*/
+
+@media all and (min-width: 550px) and (max-width: 768px) {
+    .message { height: 70%; }
+    .self_img_map, .self_img_phone, .self_img_email { 
+        width: 60px; 
+        margin-left: 7vh;
+    }
+    .phoneBox { 
+        font-size: 1.5rem;
+        height: 30%; 
+    }
+    .self_text {
+        margin-left: 33px;
+    }
+}
+
 @media (max-width: 650px) {
     .title_p, .title_s {
         font-size:2em;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 549px) {
+    .center_layout { width: 100%; }
+
+    .contactBox {
+        font-size: 1.5rem;
+        height: 11%;
+        margin-top: 5vh;
+    }
+
+    .textBox { font-size: 1.3rem; } 
+
+    .self_img_map, .self_img_phone, .self_img_email { 
+        width: 50px;
+    }
+    .phoneBox { 
+        font-size: 1rem;
+        height: 30vh;
+        width: 100%; 
+    }
+    .self_img_git { opacity: 0; }
+    #footerDiv > div > div { 
+        font-size: 14px; 
+        left: 21%;
     }
 }
