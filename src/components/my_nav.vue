@@ -8,16 +8,16 @@
         <nav id="main-navigation" class="nav-main">
             <ul class="menu">
                 <li class="menu__item">
-                    <a class="menu__link" href="#0">Home</a>
+                    <a class="menu__link" @click="$stateAni('move1')" href="#info_home" >HOME</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#0">Skill</a>
+                    <a class="menu__link" @click="$stateAni('move2')" href="#info_skill" >SKILL</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#0">Portfolio</a>
+                    <a class="menu__link" @click="$stateAni('move3')" href="#info_site" >SITE</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#0">Phone</a>
+                    <a class="menu__link" @click="$stateAni('move4')" href="#info_phone" >PHONE</a>
                 </li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@ export default {
     mounted () {
         window.addEventListener('scroll', () => {
             this.scroll_num = window.scrollY;
-            
+
             if (this.scroll_num >= 650) {
                 this.$stateAni("stop");
             } else {

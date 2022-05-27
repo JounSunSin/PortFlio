@@ -43,6 +43,13 @@ const methods = {
     stateAni (state) {
         let textAni = jq(".sp-content");
         let navCheck = jq("#main-navigation-toggle").is(":checked");
+        let siteHeight = jq("#info_home").outerHeight(true);
+        let home = 0;
+        let skill = siteHeight;
+        let site = siteHeight + siteHeight;
+        let phone = siteHeight + siteHeight + siteHeight;
+
+        console.log(state);
 
         if (state === 'stop') {
             textAni.css('display','none');
@@ -52,6 +59,24 @@ const methods = {
             textAni.css('display','none');
         } else if (state === 'checked' && navCheck == true) {
             textAni.css('display','block');
+        } else if (state == "move1" || state == "move2" || state == "move3" || state == "move4") {
+
+            console.log("move1 " + home);
+            console.log("move2 " + skill);
+            console.log("move3 " + site);
+            console.log("move4 " + phone);
+            console.log("scroll " + window.scrollY);    
+
+            if (state == "move1") {
+                jq('html,body').stop().animate({scrollTop: home}, 100);
+            } else if (state == "move2") {
+                jq('html,body').stop().animate({scrollTop: skill}, 100);
+            } else if (state == "move3") {
+                jq('html,body').stop().animate({scrollTop: site}, 100);
+            } else if (state == "move4") {
+                jq('html,body').stop().animate({scrollTop: phone}, 100);
+            }
+            jq("#main-navigation-toggle").prop("checked",false);
         }
     },
     backCover () {

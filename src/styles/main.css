@@ -39,6 +39,7 @@ a, a:link, a:visited {
 
 /* 메뉴바 css */
 .nav-main {
+    font-family: 'Iceland';
     align-items: center;
     display: flex;
     height: 100%;
@@ -47,6 +48,7 @@ a, a:link, a:visited {
     position: fixed;
     transition: left 0s calc(150ms * 2), transform 0s calc(150ms * 2);
     width: 100%;
+    z-index: 99;
 }
 .nav-main::before, .nav-main::after {
     content: '';
@@ -145,8 +147,12 @@ a, a:link, a:visited {
     position: relative;
     text-align: center;
     z-index: 1;
+    padding: 0;
 }
-.menu > .menu__item { font-size: 5vmin; }
+.menu > .menu__item { 
+    font-size: 7rem;
+    font-weight: bold; 
+}
 
 .menu__item {
     display: block;
@@ -218,6 +224,7 @@ a, a:link, a:visited {
         opacity: 0;
     }
 }
+
 /* section 2 */
 #section2_layout {
     width: 100%;
@@ -271,6 +278,9 @@ a, a:link, a:visited {
 }
 
 @media all and (min-width: 550px) and (max-width: 767px) {
+    .menu > .menu__item { 
+        font-size: 6rem;
+    }
     .skill_item{
         background-size: 25vw;
     }
@@ -278,7 +288,10 @@ a, a:link, a:visited {
 }
 
 @media all and (min-width: 360px) and (max-width: 549px) {
-    .skill_item{
+    .menu > .menu__item { 
+        font-size: 4rem;
+    }
+        .skill_item{
         background-size: 25vw;
     }
 

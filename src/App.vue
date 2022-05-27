@@ -1,10 +1,12 @@
 <template>
     <section id="routers">
-        <Nav/>
-        <Home/>
-        <Skill/>
-        <WebSite/>
-        <Phone/>
+        <router-view>
+            <Nav/>
+            <Home/>
+            <Skill/>
+            <WebSite/>
+            <Phone/>
+        </router-view>
     </section>
 </template>
 
