@@ -19,15 +19,21 @@
 
                 <div class="phoneBox">
                     <div class="selfBox self_address">
-                        <div class="self_img_map" alt="map"></div>
+                        <div class="self_img_box">
+                            <img src="../assets/marker.webp" alt="map" class="self_img_map">
+                        </div>
                         <div class="self_text">경기도 고양시 화정역</div>
                     </div>
                     <div class="selfBox self_email">
-                        <div class="self_img_email" alt="email"></div>
+                        <div class="self_img_box">
+                            <img src="../assets/email.webp" alt="email" class="self_img_email">
+                        </div>
                         <div class="self_text">bluesky0180@naver.com</div>
                     </div>
                     <div class="selfBox self_phone">
-                        <div class="self_img_phone" alt="phone"></div>
+                        <div class="self_img_box">
+                            <img src="../assets/phone.webp" alt="phone" class="self_img_phone">
+                        </div>
                         <div class="self_text">010 - 2907 - 0180</div>
                     </div>
                 </div>           

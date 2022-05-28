@@ -85,22 +85,22 @@ h1.main, p.demos {
     animation-delay: 1s;
 }
 .sp-container h2.frame-2 {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
 }
 .sp-container h2.frame-3 {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    -ms-animation-delay: 7s;
+    animation-delay: 7s;
 }
 .sp-container h2.frame-4 {
-    -webkit-animation-delay: 9s;
-    -moz-animation-delay: 9s;
-    -ms-animation-delay: 9s;
-    animation-delay: 9s;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    animation-delay: 10s;
 }
 .sp-container h2.frame-5 {
     -webkit-animation: none;
@@ -301,5 +301,8 @@ h1.main, p.demos {
 }
 
 @media all and (min-width: 360px) and (max-width: 549px) {
-    .sp-container h2 { font-size: 2rem; }
+    .sp-container h2 { 
+        font-size: 4.5rem; 
+        top: 20%;
+    }
 }

@@ -111,7 +111,9 @@
                             <div class="pf_job">기획 / 디자인 / 퍼블리싱 / 코딩 </div>
                             <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
                             <div class="pf_btn">
-                                <button class="btn"><span>사이트 폐쇄</span></button>
+                                <button class="btn">
+                                    <a target="_blank" href="https://sun-portflio.netlify.app/" alt="portflio">View Site</a>
+                                </button>
                             </div>
                         </div>
                     </label>

@@ -16,11 +16,11 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    text-shadow: yellow 1px 1px 1px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 2px;
 }
 .message {
     width: 100%;
-    height: 65%;
+    height: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -36,11 +36,12 @@
 
 .phoneBox {
     width: 575px;
-    height: 45vh;
+    height: 35%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content:space-between;
+    margin-top: 2vh;
 }
 
 .phoneBox, .contactBox {
@@ -59,10 +60,12 @@
     align-items: center;
 }
 
-.self_img_map { background-image: url("../assets/marker.png"); }
-.self_img_email { background-image: url("../assets/email.png"); }
-.self_img_phone { background-image: url("../assets/phone.png"); }
-.self_img_git { background-image: url("../assets/git.png"); margin-left: 3px; }
+.self_img_box {
+    width: 30%;
+    text-align: center;
+}
+
+.self_img_git { background-image: url("../assets/git.webp"); margin-left: 3px; }
 
 .self_img_map, .self_img_email, .self_img_phone, .self_img_git {
     width: 100px;
@@ -71,10 +74,6 @@
     background-position: center center;
     background-repeat: no-repeat;
 }    
-
-.self_text {
-    margin-left: 65px;
-}
 
 #footerDiv {
     width: 100%;
@@ -103,15 +102,8 @@
 }
 
 /*  네온 관련 CSS */
-@font-face {
-    font-family: 'Iceland';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Iceland'), local('Iceland-Regular'), url(http://themes.googleusercontent.com/static/fonts/iceland/v3/F6LYTZLHrG9BNYXRjU7RSw.woff) format('woff');
-}
-
 .contact_a {
-    font-size:1.5em;
+    font-size:9rem;
     color:#fff;
     font-family:Iceland;
 }
@@ -216,9 +208,6 @@
         font-size: 1.5rem;
         height: 30%; 
     }
-    .self_text {
-        margin-left: 33px;
-    }
 }
 
 @media (max-width: 650px) {
@@ -229,7 +218,7 @@
 
 @media all and (min-width: 360px) and (max-width: 549px) {
     .center_layout { width: 100%; }
-
+    .contact_a { font-size: 6rem; }
     .contactBox {
         font-size: 1.5rem;
         height: 11%;
@@ -237,12 +226,12 @@
     }
 
     .textBox { font-size: 1.3rem; } 
-
+    
     .self_img_map, .self_img_phone, .self_img_email { 
         width: 50px;
     }
     .phoneBox { 
-        font-size: 1rem;
+        font-size: 1.2rem;
         height: 30vh;
         width: 100%; 
     }

@@ -38,7 +38,7 @@ export default {
 
             if (this.scroll_num >= 650) {
                 this.$stateAni("stop");
-            } else {
+            } else if (this.scroll_num < 500) {
                 this.$stateAni("run");
             }
         }); 

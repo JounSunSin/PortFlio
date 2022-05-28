@@ -27,19 +27,19 @@
     height: 35%;
     text-align: center;
     color: #fff;
-    text-shadow: rgb(110, 109, 109) 1px 0 2px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.site_img1 { background-image: url("../assets/site2.jpg"); }
-.site_img2 { background-image: url("../assets/site6.jpg"); }
-.site_img3 { background-image: url("../assets/site5.jpg"); }
-.site_img4 { background-image: url("../assets/site1.jpg"); }
-.site_img5 { background-image: url("../assets/site3.jpg"); }
-.site_img6 { background-image: url("../assets/site4.jpg"); }
-.site_img7 { background-image: url("../assets/site7.jpg"); }
+.site_img1 { background-image: url("../assets/site2.webp"); }
+.site_img2 { background-image: url("../assets/site6.webp"); }
+.site_img3 { background-image: url("../assets/site5.webp"); }
+.site_img4 { background-image: url("../assets/site1.webp"); }
+.site_img5 { background-image: url("../assets/site3.webp"); }
+.site_img6 { background-image: url("../assets/site4.webp"); }
+.site_img7 { background-image: url("../assets/site7.webp"); }
 
 .pf_title {
     font-size: 3rem;
@@ -330,39 +330,40 @@
     .oneBox { background-size: 100% 100%; }
 
     .pf_title { 
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
-    .pf_job, .pf_web, .pf_lang { font-size: 1.5rem } 
+    .pf_job, .pf_web, .pf_lang { font-size: 1.7rem } 
     .pf_btn > button { 
         width: 130px;
         padding: 10px 10px; 
-        font-size: 14px;
+        font-size: 1.1rem;
     }
 }
 
 @media (min-width: 360px) and (max-width: 749px) {
     .siteBox { margin-top: 0; }
     #slider {
-        height: 90%; 
-        margin-top: 6vh;
+        height: 85%; 
+        margin-top: 7vh;
     }
     #slider label {
         width: 70%;
     }
 
     .pf_title { 
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .pf_lang { 
-        font-size: 20px; 
+        font-size: 1.3rem; 
     }
     .pf_job, .pf_web { 
-        font-size: 12px;
+        font-size: 1.1rem;
     } 
     .pf_btn > button { 
         font-size: 12px;
         width: 80px;
+        height: 35px;
         padding: 0px; 
     }
 
