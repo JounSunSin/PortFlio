@@ -56,30 +56,40 @@
                             <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
                             <div class="pf_btn btn_multi">
                                 <button class="btn">
-                                    <a target="_blank" href="http://polisci.snu.ac.kr/korean/" alt="서울대 정치학 전공 홈페이지">정치학전공</a>
-                                </button>
-                                <button class="btn">
-                                    <a target="_blank" href="http://ir.snu.ac.kr/korean/" alt="서울대 외교학 전공 홈페이지">외교학전공</a>
-                                </button>
-                                <button class="btn">
-                                    <a target="_blank" href="http://psir.snu.ac.kr/korean/" alt="서울대 정치외교 학부 홈페이지">정치외교학부</a>
+                                    <a target="_blank" href="http://psir.snu.ac.kr/korean/" alt="서울대 정치외교 학부 홈페이지">View Site</a>
                                 </button>
                             </div>
                         </div>
                     </label>
                     <label for="s4" id="slide4" class="card-slider">
-                        <div class="oneBox site_img4" alt="JE Moblie"></div>
+                        <div class="oneBox site_img3" alt="서울대 정치외교학부"></div>
                         <div class="twoBox">
-                            <div class="pf_title">JE Moblie</div>
+                            <div class="pf_title">서울대 외교학 전공</div>
                             <div class="pf_lang">PHP</div>
-                            <div class="pf_job">디자인 / 퍼블리싱 / 게시판 </div>
+                            <div class="pf_job">퍼블리싱 / 포토샵 / 게시판 </div>
                             <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
-                            <div class="pf_btn">
-                                <button class="btn"><span>사이트 폐쇄</span></button>
+                            <div class="pf_btn btn_multi">
+                                <button class="btn">
+                                    <a target="_blank" href="http://ir.snu.ac.kr/korean/" alt="서울대 외교학 전공 홈페이지">View Site</a>
+                                </button>
                             </div>
                         </div>
                     </label>
                     <label for="s5" id="slide5" class="card-slider">
+                        <div class="oneBox site_img3" alt="서울대 정치외교학부"></div>
+                        <div class="twoBox">
+                            <div class="pf_title">서울대 정치학 전공</div>
+                            <div class="pf_lang">PHP</div>
+                            <div class="pf_job">퍼블리싱 / 포토샵 / 게시판 </div>
+                            <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
+                            <div class="pf_btn btn_multi">
+                                <button class="btn">
+                                    <a target="_blank" href="http://polisci.snu.ac.kr/korean/" alt="서울대 정치학 전공 홈페이지">View Site</a>
+                                </button>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s6" id="slide6" class="card-slider">
                         <div class="oneBox site_img5" alt="사랑의 장례"></div>
                         <div class="twoBox">
                             <div class="pf_title">사랑의 장례</div>
@@ -87,19 +97,9 @@
                             <div class="pf_job">기획 / 디자인 / 퍼블리싱 / 코딩 </div>
                             <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
                             <div class="pf_btn">
-                                <button class="btn"><span>사이트 폐쇄</span></button>
-                            </div>
-                        </div>
-                    </label>
-                    <label for="s6" id="slide6" class="card-slider">
-                        <div class="oneBox site_img6" alt="순천향대 컨퍼런스"></div>
-                        <div class="twoBox">
-                            <div class="pf_title">순천향대 컨퍼런스</div>
-                            <div class="pf_lang">PHP</div>
-                            <div class="pf_job">퍼블리싱 / 포토샵 / 코딩 </div>
-                            <div class="pf_web">반응형 ( PC / Moblie / Tablet )</div>
-                            <div class="pf_btn">
-                                <button class="btn"><span>사이트 폐쇄</span></button>
+                                <button class="btn">
+                                    <a target="_blank" href="https://jopocski.cafe24.com/sun/ex5/korean/index.php?nav=0" alt="portflio">View Site</a>
+                                </button>
                             </div>
                         </div>
                     </label>
