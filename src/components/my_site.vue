@@ -62,7 +62,7 @@
                         </div>
                     </label>
                     <label for="s4" id="slide4" class="card-slider">
-                        <div class="oneBox site_img3" alt="서울대 정치외교학부"></div>
+                        <div class="oneBox site_img4" alt="서울대 정치외교학부"></div>
                         <div class="twoBox">
                             <div class="pf_title">서울대 외교학 전공</div>
                             <div class="pf_lang">PHP</div>
@@ -76,7 +76,7 @@
                         </div>
                     </label>
                     <label for="s5" id="slide5" class="card-slider">
-                        <div class="oneBox site_img3" alt="서울대 정치외교학부"></div>
+                        <div class="oneBox site_img5" alt="서울대 정치외교학부"></div>
                         <div class="twoBox">
                             <div class="pf_title">서울대 정치학 전공</div>
                             <div class="pf_lang">PHP</div>
@@ -90,7 +90,7 @@
                         </div>
                     </label>
                     <label for="s6" id="slide6" class="card-slider">
-                        <div class="oneBox site_img5" alt="사랑의 장례"></div>
+                        <div class="oneBox site_img6" alt="사랑의 장례"></div>
                         <div class="twoBox">
                             <div class="pf_title">사랑의 장례</div>
                             <div class="pf_lang">PHP</div>
