@@ -1,243 +1,236 @@
 /* section 4 */
 #section4_layout {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column-reverse;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .center_layout {
-    width: 575px;
-    height: 94vh;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    text-shadow: rgb(0, 0, 0) 1px 1px 2px;
+	width: 575px;
+	height: 94vh;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	text-shadow: rgb(0, 0, 0) 1px 1px 2px;
 }
 .message {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
+	width: 100%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
 }
 
 .textBox {
-    text-align: center;
-    font-size: 1.7rem;
-    color: #fff;
-    font-weight: 700;
-    height: 75%;
-    margin-top: 10vh;
+	text-align: center;
+	font-size: 1.7rem;
+	color: #fff;
+	font-weight: 700;
+	height: 75%;
+	margin-top: 10vh;
 }
 
 .phoneBox {
-    width: 575px;
-    height: 35%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:space-between;
-    margin-top: 2vh;
+	width: 575px;
+	height: 35%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.phoneBox, .contactBox {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: 700;
+.phoneBox,
+.contactBox {
+	font-size: 2rem;
+	color: #fff;
+	font-weight: 700;
 }
 
-.contactBox { height: 11%; }
+.contactBox {
+	height: 11%;
+}
 
 .selfBox {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .self_img_box {
-    width: 30%;
-    text-align: center;
+	width: 29%;
+	text-align: center;
 }
 
-.self_img_git { background-image: url("../assets/git.webp"); margin-left: 3px; }
+.skill_icon {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
-.self_img_map, .self_img_email, .self_img_phone, .self_img_git {
-    width: 100px;
-    height: 100%;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}    
+.skill_icon > img {
+	width: 14%;
+}
+
+.self_img_git {
+	background-image: url('../assets/git.webp');
+	margin-left: 3px;
+}
+
+.self_img_map,
+.self_img_git {
+	width: 100px;
+	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
 
 #footerDiv {
-    width: 100%;
-    height: 5vh;
-    background-color: #50586C;
-    position: static;
+	width: 100%;
+	height: 5vh;
+	background-color: #50586c;
+	position: static;
 }
 
 #footerDiv > div {
-    width: 575px;
-    height: 4vh;
-    top: 81.1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    display: flex;
-    flex-direction: row;
+	width: 575px;
+	height: 4vh;
+	top: 81.1%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	display: flex;
+	flex-direction: row;
 }
 
 #footerDiv > div > div {
-    color: #fff;
-    position: fixed;
-    left: 29%;
-    top: 22%;
-    font-size: 1rem;
+	color: #fff;
+	position: fixed;
+	left: 29%;
+	top: 22%;
+	font-size: 1rem;
 }
 
 /*  네온 관련 CSS */
 .contact_a {
-    font-size:9rem;
-    color:#fff;
-    font-family:Iceland;
+	font-size: 9rem;
+	color: #fff;
+	font-family: Iceland;
 }
 
-.contact_a:hover{
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+.contact_a:hover {
+	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon2 1.5s ease-in-out infinite alternate;
+	animation: neon2 1.5s ease-in-out infinite alternate;
 }
-
 
 /*neeeeoooon*/
-.title_p{
-    text-align:center;
-    font-size:3em;
-    margin:20px 0 20px 0; 
+.title_p {
+	text-align: center;
+	font-size: 3em;
+	margin: 20px 0 20px 0;
 }
-.contact_a{
-    text-decoration:none; 
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+.contact_a {
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 /*glow*/
 @keyframes neon2 {
-    from {
-        text-shadow: 0 0 10px #fff,
-                    0 0 20px  #fff,
-                    0 0 30px  #fff,
-                    0 0 40px  #228DFF,
-                    0 0 70px  #228DFF,
-                    0 0 80px  #228DFF,
-                    0 0 100px #228DFF,
-                    0 0 150px #228DFF;
-    }
-    to {
-        text-shadow: 0 0 5px #fff,
-                    0 0 10px #fff,
-                    0 0 15px #fff,
-                    0 0 20px #228DFF,
-                    0 0 35px #228DFF,
-                    0 0 40px #228DFF,
-                    0 0 50px #228DFF,
-                    0 0 75px #228DFF;
-    }
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+	}
+	to {
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	}
 }
 @-webkit-keyframes neon2 {
-    from {
-        text-shadow: 0 0 10px #fff,
-                    0 0 20px  #fff,
-                    0 0 30px  #fff,
-                    0 0 40px  #228DFF,
-                    0 0 70px  #228DFF,
-                    0 0 80px  #228DFF,
-                    0 0 100px #228DFF,
-                    0 0 150px #228DFF;
-    }
-    to {
-        text-shadow: 0 0 5px #fff,
-                    0 0 10px #fff,
-                    0 0 15px #fff,
-                    0 0 20px #228DFF,
-                    0 0 35px #228DFF,
-                    0 0 40px #228DFF,
-                    0 0 50px #228DFF,
-                    0 0 75px #228DFF;
-    }
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+	}
+	to {
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	}
 }
 @-moz-keyframes neon2 {
-    from {
-        text-shadow: 0 0 10px #fff,
-                    0 0 20px  #fff,
-                    0 0 30px  #fff,
-                    0 0 40px  #228DFF,
-                    0 0 70px  #228DFF,
-                    0 0 80px  #228DFF,
-                    0 0 100px #228DFF,
-                    0 0 150px #228DFF;
-    }
-    to {
-        text-shadow: 0 0 5px #fff,
-                    0 0 10px #fff,
-                    0 0 15px #fff,
-                    0 0 20px #228DFF,
-                    0 0 35px #228DFF,
-                    0 0 40px #228DFF,
-                    0 0 50px #228DFF,
-                    0 0 75px #228DFF;
-    }
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+	}
+	to {
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+	}
 }
 
 /*REEEEEEEEEEESPONSIVE*/
 
 @media all and (min-width: 550px) and (max-width: 768px) {
-    .message { height: 70%; }
-    .self_img_map, .self_img_phone, .self_img_email { 
-        width: 60px; 
-        margin-left: 7vh;
-    }
-    .phoneBox { 
-        font-size: 1.5rem;
-        height: 30%; 
-    }
+	.message {
+		height: 70%;
+	}
+	.self_img_map,
+	.self_img_phone,
+	.self_img_email {
+		width: 60px;
+		margin-left: 7vh;
+	}
+	.phoneBox {
+		font-size: 1.5rem;
+		height: 30%;
+	}
 }
 
 @media (max-width: 650px) {
-    .title_p, .title_s {
-        font-size:2em;
-    }
+	.title_p,
+	.title_s {
+		font-size: 2em;
+	}
 }
 
 @media all and (min-width: 360px) and (max-width: 549px) {
-    .center_layout { width: 100%; }
-    .contact_a { font-size: 6rem; }
-    .contactBox {
-        font-size: 1.5rem;
-        height: 11%;
-        margin-top: 5vh;
-    }
+	.center_layout {
+		width: 100%;
+	}
+	.contact_a {
+		font-size: 6rem;
+	}
+	.contactBox {
+		font-size: 1.5rem;
+		height: 11%;
+		margin-top: 5vh;
+	}
 
-    .textBox { font-size: 1.3rem; } 
-    
-    .self_img_map, .self_img_phone, .self_img_email { 
-        width: 50px;
-    }
-    .phoneBox { 
-        font-size: 1.2rem;
-        height: 30vh;
-        width: 100%; 
-    }
-    .self_img_git { opacity: 0; }
-    #footerDiv > div > div { 
-        font-size: 14px; 
-        left: 21%;
-    }
+	.textBox {
+		font-size: 1.3rem;
+	}
+
+	.skill_icon > img {
+		width: 12%;
+		height: 15%;
+	}
+
+	.self_img_map {
+		width: 50px;
+	}
+	.phoneBox {
+		font-size: 1.2rem;
+		height: 30vh;
+		width: 100%;
+	}
+	.self_img_git {
+		opacity: 0;
+	}
+	#footerDiv > div > div {
+		font-size: 14px;
+		left: 21%;
+	}
 }
